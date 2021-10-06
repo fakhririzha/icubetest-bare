@@ -1,19 +1,203 @@
 <html>
-	<head>
-		<!-- Assets : JS, CSS, Fonts -->
-				
-	</head>
 
-	<body>
-		<div class="page-wrapper">		
-			<!-- Sidebar -->
-			<div class="sidebar">
-				
-			</div>
-			<!-- Main Content (Current playing, Browse, Editor Picks) -->
-			<div class="main-content">				
-				
-			</div>
-		</div>
-	</body>
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Assets : JS, CSS, Fonts -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- OWL Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl-carousel-2@0.0.3/assets/owl.carousel.min.css" integrity="sha256-xzhALyOMieP6tCpGNSGBArHOUW8yd5HWuAH9Ck51CJM=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl-carousel-2@0.0.3/assets/owl.theme.default.min.css" integrity="sha256-5uQPomcTE0IDyu0ujZNiqMdfXDN/AuJeAHI6JY7vZuo=" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <nav class="sidebar__nav">
+                <ul>
+                    <li class="sidebar__item">
+                        <a href="#">
+                            <!-- <img src="src/img/home.svg" style="filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);"> -->
+                            <img src="src/img/home.svg">
+                            <span>HOME</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#">
+                            <img src="src/img/search.svg">
+                            <span>BROWSE</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#">
+                            <img src="src/img/listen.svg">
+                            <span>HEAR THIS</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="secondary-sidenav">
+                    <li class="sidebar__item">
+                        <a href="#">
+                            <img src="src/img/person.svg">
+                            <span>My Music</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#">
+                            <img src="src/img/heart.svg">
+                            <span>Favourite Tracks</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#">
+                            <img src="src/img/playlist.svg">
+                            <span>Playlist</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#">
+                            <img src="src/img/albums.svg">
+                            <span>Albums</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Main Content (Current playing, Browse, Editor Picks) -->
+        <div class="main-content">
+            <div class="card music-player">
+                <div class="music-player__album">
+                    <div class="animated-eq">
+                        <img src="src/img/animated-eq.gif">
+                    </div>
+                </div>
+                <div class="music-player__description">
+                    <span>All I Want</span>
+                    <small>by Kodaline</small>
+                    <div class="music-player__action">
+                        <img class="music-player__action-favorite" src="src/img/player-heart.svg" alt="">
+                        <img class="music-player__action-skip" src="src/img/player-skipsong.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="browse">
+                <span>Browse</span>
+                <img src="src/img/icon-browse.png" alt="">
+                <p>Explore music, entertainment, and many more</p>
+
+                <div class="browse__carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="src/img/genre-1.jpg" alt="">
+                        <div class="item-caption">
+                            <span>Popular</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/genre-2.jpg" alt="">
+                        <div class="item-caption">
+                            <span>Indie</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/genre-3.jpg" alt="">
+                        <div class="item-caption">
+                            <span>Pop</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/genre-4.jpg" alt="">
+                        <div class="item-caption">
+                            <span>Rock</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/genre-5.jpg" alt="">
+                        <div class="item-caption">
+                            <span>Country</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/genre-6.jpg" alt="">
+                        <div class="item-caption">
+                            <span>Jazz</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/genre-7.jpg" alt="">
+                        <div class="item-caption">
+                            <span>R&B</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist">
+                <span>Playlist picks</span>
+                <img src="src/img/icon-browse.png" alt="">
+                <p>Chosen for you by our Editors.</p>
+
+                <div class="playlist__carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="src/img/album-1.jpg" alt="">
+                        <p class="playlist__carousel-desc">Hits of the Moment</p>
+                        <p class="playlist__carousel-detail">60 tracks - 725,066 fans</p>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/album-2.jpg" alt="">
+                        <p class="playlist__carousel-desc">New Dance</p>
+                        <p class="playlist__carousel-detail">60 tracks - 725,066 fans</p>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/album-3.jpg" alt="">
+                        <p class="playlist__carousel-desc">Wake up Hits</p>
+                        <p class="playlist__carousel-detail">60 tracks - 725,066 fans</p>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/album-4.jpg" alt="">
+                        <p class="playlist__carousel-desc">Pop Punk Heroes</p>
+                        <p class="playlist__carousel-detail">60 tracks - 725,066 fans</p>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/album-5.jpg" alt="">
+                        <p class="playlist__carousel-desc">Hits of the Moment</p>
+                        <p class="playlist__carousel-detail">60 tracks - 725,066 fans</p>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/album-6.jpg" alt="">
+                        <p class="playlist__carousel-desc">Hits of the Moment</p>
+                        <p class="playlist__carousel-detail">60 tracks - 725,066 fans</p>
+                    </div>
+                    <div class="item">
+                        <img src="src/img/album-7.jpg" alt="">
+                        <p class="playlist__carousel-desc">Hits of the Moment</p>
+                        <p class="playlist__carousel-detail">60 tracks - 725,066 fans</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+<!-- JQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+<!-- OWL Carousel -->
+<script src="https://cdn.jsdelivr.net/npm/owl-carousel-2@0.0.3/owl.carousel.min.js" integrity="sha256-22z45gMV2N/4VRm4i27Kl+VT/AZV9xHbRrDOebgu7UA=" crossorigin="anonymous"></script>
+
+<!-- Custom JavaScript -->
+<script src="src/js/script.js"></script>
+
 </html>
